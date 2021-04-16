@@ -1,0 +1,373 @@
+    
+  /*///////////////////////////////////*/
+  /*               Fonts               */
+  /*///////////////////////////////////*/
+    
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+  /*font-family: 'Roboto', sans-serif;*/
+
+@font-face{
+  font-family: Normal-Roboto;
+  src: url('/Roboto/Roboto-Light.ttf');
+}
+
+@font-face{
+  font-family: Bold-Roboto;
+  src: url('/Roboto/Roboto-BoldItalic.ttf');
+}
+  /*///////////////////////////////////*/
+  /*          general styles           */
+  /*///////////////////////////////////*/
+
+  body{
+    margin: 0px;
+    
+    font-family: Normal-Roboto;
+    overflow-x: hidden;
+      
+  }
+
+  p, h1, h2, h3, a, ul{
+    text-decoration: none;
+    color: #222;
+  }
+
+    
+  /*///////////////////////////////////*/
+  /*         Header Image              */
+  /*///////////////////////////////////*/
+    .background-head-image{
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: url('Test-JY.jpg');
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+    }
+    
+    .background-head-image h2{
+      position: absolute;
+      font-size: 65;
+      top: 180px;
+      left: 160px;
+      width: 100%;
+      color: white;
+      text-align: center;
+    }
+
+    .background-head-image h5{
+      position: absolute;
+      font-size: 30;
+      top: 150px;
+      left: 160px;
+      width: 100%;
+      color: white;
+      text-align: center;
+    }
+  
+  
+  
+   
+/*///////////////////////////////////*/
+/*          Resume Information       */
+/*///////////////////////////////////*/
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+.section-head{
+  margin: 0px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  /*background: #eff6f7;*/
+  text-align: center;
+  background: #fafeffd7;
+  font-size: 35px;
+}
+
+.group{
+  /*font-family: mySecondFont;*/
+  background: #fafeffd7;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+
+/*  GRID OF TWO  */
+
+.span_1_of_2 {
+	width: 37.5%;
+  /*width: 30.2%;*/
+  background: #fafeffd7;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 60px
+    
+}
+
+.span_1_of_2 img{
+	position: relative;
+  
+  left: 300px;
+  background: #fafeffd7;
+  /*background: #fafeffd7;*/
+  
+
+    
+}
+
+.span_2_of_2 {
+  width: 50.0%;
+  /*width: 60.4%;*/
+  background: #fafeffd7;
+  word-wrap: break-word;
+  padding: 20px;
+}
+
+/*  Job Info and Title Formatting  */
+
+.job-info-section{
+  line-height: 35px;
+}
+
+.jobcompany{
+  font-size: 25px;
+  color: rgb(31, 115, 198);
+}
+
+.jobrole{
+  font-size: 17px;
+  /*color: rgb(21, 165, 8);*/
+}
+
+/*///////////////////////////////////*/
+  /*          Food Section             */
+  /*///////////////////////////////////*/  
+    
+  .flexbox-header{
+    margin: 0px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    /*background: #eff6f7;*/
+    justify-content: center;
+    background: rgba(197, 214, 255, 0.836);
+    font-size: 35px;
+  }
+  
+
+
+  .flexbox-container{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    background: rgba(197, 214, 255, 0.836);
+    padding-bottom: 70px;
+  }
+
+  .flexbox-item{
+    width: 300px;
+    margin: 35px;
+    border: 3px solid #333;      
+  }
+
+  .flexbox-item-1 img{
+    min-height: 100px;
+    max-width: 100%;
+  }
+
+  .flexbox-item-2 img{
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .flexbox-item-3 img{
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .flexbox-item-1 {
+    min-height: 200px;
+    background: url('pho-ca-dao-Logo.jpg');
+    background-position: center;
+  }
+
+  .flexbox-item-1:hover {
+    min-height: 200px;
+    background: url('Pho.jpg');
+    background-position: center;
+  }
+
+  .flexbox-item-2 {
+    min-height: 200px;
+    background: url('dirty-birds-logo.jpg');
+  }
+
+  .flexbox-item-2:hover {
+    min-height: 200px;
+    background: url('dirtybirds.jpg');
+  }
+
+  .flexbox-item-3 {
+    min-height: 300px;
+    background: url('phils-logo.jpg');
+    background-position: center;
+  }
+
+  .flexbox-item-3:hover {
+    min-height: 300px;
+    background: url('phils2.jpg');
+  }
+
+  /*///////////////////////////////////*/
+  /*          LinkedIn and Gmail       */
+  /*///////////////////////////////////*/
+  
+  .linked-in{
+    background: rgb(159, 183, 191);
+    font-size: 18;
+  }
+
+
+
+  #linked-in-blurb{
+    line-height: 30px;
+  }
+
+  .linked-in-container{
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
+  .linked-in-header{
+    font-size: 40px;
+  }
+
+  .linked-in div,header{
+    text-align: center; 
+  }
+
+  .linked-in-header::after{
+    content: "";
+    float: left;
+    background: #292a29cd;
+    width: 100%;
+    height: 4px;
+    border-radius: 3px;
+    margin-top: 5px;
+    
+  }
+
+  .linked-in img{
+    opacity: 0.75;
+    padding-bottom: 40px;
+    
+
+  }
+
+  .linked-in img:hover{
+    opacity: 1.00;
+  }
+
+  .floater{
+    float: left;
+    padding: 55px 0px 0px 200px;
+  }
+ 
+  .smo img{
+    width:15%;
+    height: auto;
+    
+  }
+
+/*///////////////////////////////////*/
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+/*///////////////////////////////////*/
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+
+/*///////////////////////////////////*/
+  /*          CONCEPT             */
+/*///////////////////////////////////*/ 
+
+.concept-wrapper{
+  background-image: linear-gradient(to bottom, rgb(80, 80, 240),rgb(83, 83, 255),rgb(126, 126, 241),rgb(160,160,200));
+}
+
+.concept{
+  text-align: center;
+  color: black;
+  line-height: 45px;
+  font-size: 25px;
+  
+}
+
+.choice:hover{
+  color: lightblue;
+}
+
+.c-header{
+  padding-top: 60px;
+  padding-bottom: 40px;
+  font-size: 35px;
+}
+
+.c-sub-header{
+  
+  font-size: 18px;
+}
+
+
+.c-reselling{
+  padding-bottom: 40px;
+}
+
+/*///////////////////////////////////*/
+  /*          FOOTER            */
+  /*///////////////////////////////////*/ 
+
+.footer{
+  padding: 20px 0px 20px 0px;
+  color: #777;
+  text-align: center;
+      
+  background: rgb(159, 183, 191);
+}
+
+.footer::after{
+  content: "";
+  float: left;
+  background: #777;
+  width: 100%;
+  height: 2px;
+  border-radius: 3px;
+  
+  
+}

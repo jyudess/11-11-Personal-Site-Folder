@@ -1,0 +1,22 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <div class="create-job content">
+    <form>
+      <label for="company">Company Name:</label>
+      <!-- In css file change title to company and snippet to role-->
+      <input type="text" id="company" name="company" required>
+      <label for="role">Role:</label>
+      <input type="text" id="role" name="role" required>
+      <label for="body">Blog body:</label>
+      <textarea id="body" name="body" required></textarea>
+      <button>Submit</button>
+    </form>
+  </div>
+
+  <%- include("./partials/footer.ejs") %>
+</body>
+</html>

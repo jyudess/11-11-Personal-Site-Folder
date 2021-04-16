@@ -1,0 +1,33 @@
+
+<div class='info'>
+    
+    <h2 id = 'head-head'>Here's a little bit about my professional experience</h2>
+    <br>
+    
+    <% if (jobs.length > 0) { %> 
+        
+        <% jobs.forEach(job => { %>
+            <% let i = 1 %>
+            <% i++ %>
+            <% imagerotater = 'SneakerLogo' + i + '.png' %>
+            <div id= 'jobBox1'>
+            <span class = 'info'>
+                <img src= <%=imagerotater%> alt='Test Alt' style="display: inline">
+            </span>
+            <h2 id ='jobrole' class = "role" ><%= job.role %></h2>
+            <h3 id ='jobcompany' class = "company" ><%= job.company %></h3>
+            <p id ='jobdate' class = "date"><%= job.date %></p>
+            </div>
+            <div id= 'jobBox2'>
+            <p class = "description"><%= job.description %></p>
+            
+            <p class = "body"><%= job.body %></p>
+            </div>
+            
+        <% }) %>
+
+    <%  } else { %>
+        <p>There are no jobs to display </p>
+    <% } %>
+ </div>
+ 
