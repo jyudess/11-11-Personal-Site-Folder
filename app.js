@@ -8,7 +8,7 @@ const app = express();
 
 
 // connect to db
-const dbURI = 'mongodb+srv://user1:gqk9thI21jxXaj5q@cluster0.r26xd.mongodb.net/database1?retryWrites=true&w=majority'
+const dbURI = 'mongodb+srv://user1:URICODEHERE'
 mongoose.connect(dbURI, { useNewUrlParser: true , useUnifiedTopology: true })
     .then((result) => app.listen(3000))
     .then((result) => console.log('connected and listening'))
